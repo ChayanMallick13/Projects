@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 5fr 3fr;
+}
+
+.top img {
+    height: 82px;
+    width: 98px;
+    margin-left: 117px;
+    margin-top: 53px;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    margin-left: 495px;
+    margin-top: 102px;
+}
+
+header button {
+    position: absolute;
+    width: 165px;
+    height: 54px;
+    margin-left: 1205px;
+    border-radius: 5px;
+    margin-top: 54px;
+}
