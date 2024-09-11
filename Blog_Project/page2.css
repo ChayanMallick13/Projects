@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main{
+    padding-top: 0.5%;
+    padding-bottom: 10%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3.4fr 1fr;
+    grid-template-rows: 1fr 10fr 2fr;
+    font-size: small;
+}
+
+.topbar{
+    position: sticky;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgb(70, 70, 70),rgb(199, 197, 197));
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: white;
+    height: 4rem;
+}
+
+.topbar > #left {
+    font-size: 1.4rem;
+    color: grey;
+}
+
+.topbar > #left > u > a {
+    color: white;
+}
+
+.topbar > img{
+    height: 40%;
+    width: 1.4%;
+}
+
+.topbar > #mid{
+    font-size: 2rem;
+}
+
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.content{
+    padding-top: 1%;
+    padding-right: 3%;
+    padding-left: 1%;
+}
+.content > ul , ol {
+    padding-left: 6%;
+}
+.content > .dates {
+    color: grey;
+}
+
+a{
+    color: rgb(91, 199, 234);
+}
+
+.about{
+    background-color: antiquewhite;
+}
+
+.shadow{
+    box-shadow: 1px 1px 20px 1px rgb(202, 200, 200) , -1px -1px 20px 1px rgb(202, 200, 200);
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+.sidebar{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p{
+    color: rgb(60, 59, 59);
+    font-size: 0.9rem;
+}
+
+.buttons{
+    padding-left: 1.4rem;
+    height: 6rem;
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+}
+
+.test{
+    height: 2rem;
+    width: 7rem;
+    border: 0.03rem solid black;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.test:hover{
+    border: 0.03rem solid rgb(27, 160, 212);
+    color: rgb(27, 160, 212);
+    cursor: pointer;
+    transition-delay: 0.1s;
+}
+
+hr{
+    color: grey;
+    border: 1px solid grey;
+}
