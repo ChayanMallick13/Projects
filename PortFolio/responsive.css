@@ -1,0 +1,126 @@
+@media (max-width : 1200px) {
+    .container{
+        width: auto;
+    }
+    .navbar{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .hero-section{
+        flex-direction: column;
+    }
+    .hero-section-left{
+        align-items: center;
+    }
+    .hero-section-subheading{
+        font-size: 1.6rem;
+    }
+    .hero-section-right{
+        transform: perspective(100px) translateZ(-10px);
+    }
+    .faded-text{
+        font-size: 450%;
+        bottom: -5.2rem;
+        left: 1rem;
+    }
+    .project-container{
+        display: flex;
+    }
+    #project1 ,#project2 ,#project3 ,#project4 {
+        align-self: center;
+        object-fit: cover;
+        background-position: center;
+    }
+    .project-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-content{
+       bottom: 15%;
+       gap: 1em;
+       padding: 0;
+    }
+
+    .project-content-left{
+        left: 0%;
+        padding-left: 1.5em;
+    }
+    .project-content-left > .project-skills-container{
+        align-self: flex-start;
+    }
+    .project-content-right > .project-skills-container{
+        align-self: flex-end;
+    }
+    .project-content-right{
+        right: 0%;
+        padding-left: 6em;
+    }
+    
+    .project-skills-container{
+        width: 60%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .project-number{
+        font-size: 150px;
+    }
+
+    .project-number-left{
+        top: -45px;
+        right: -30px;
+    }
+
+    .project-number-right{
+        top: -45px;
+        left: -30px;
+    }
+
+    .skills-container{
+        flex-direction: column;
+    }
+    
+    .skills-container-left{
+        width: 100%;
+        align-items: center;
+    }
+
+    .skills-container-right{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .skill-fade-text{
+        font-size: 1000%;
+        bottom: -12.2rem;
+        right: 0.1rem;
+    }
+    .footer-faded-text{
+        font-size: 5em;
+    }
+}
+
+@media (max-width:618px) {
+    .faded-text{
+        font-size: 290%;
+        bottom: -4.9rem;
+        left: 1rem;
+    }
+    .footer-faded-text{
+        font-size: 2.7em;
+    }
+
+}
+
+@media (max-width:640px) {
+    .footer-wrapper{
+        flex-direction: column;
+    }
+}

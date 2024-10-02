@@ -40,7 +40,7 @@
 }
 
 .logo-text{
-    margin-left: -1.2rem;
+    margin-left: -0.1rem;
     font-size: 28px;
 }
 
@@ -171,6 +171,11 @@ a{
 
 .absolute{
     position: absolute;
+}
+
+.user-image > img {
+    width: 22rem;
+    height: 23rem;
 }
 
 .user-image{
@@ -320,7 +325,6 @@ a{
     width: 90%;
     height: 550px;
     background-size: cover;
-    /* background-repeat: no-repeat; */
     position: relative;
     box-shadow: 0px 0px 40px #1f1f1f;
 }
@@ -461,7 +465,6 @@ a{
 }
 
 #project4{
-    margin-left: 120px;
     background-image: url(Images/projects/Project4.png);
     align-self: flex-end;
 }
@@ -471,7 +474,7 @@ a{
     display: flex;
     padding: 5rem;
     margin: 10rem auto;
-    gap: 30px;
+    gap: 100px;
 }
 
 .skills-container-left{
@@ -495,8 +498,8 @@ a{
     font-style: bold;
     font-weight: 600;
     color: rgb(231, 231, 231);
-    bottom: -34.5%;
-    right: -25%;
+    bottom: -28.5%;
+    right: -22%;
     user-select: none;
     overflow-y: hidden;
 }
@@ -662,3 +665,4 @@ footer{
     display: flex;
     gap: 1rem;
 }
+
