@@ -14,3 +14,5 @@ const closing = () => {
     hidenbox.style.visibility = 'hidden';
     overlay.style.scale = 0;
 }
+
+overlay.addEventListener('click',closing);

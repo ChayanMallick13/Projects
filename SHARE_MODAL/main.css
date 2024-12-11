@@ -200,6 +200,7 @@ button{
 .icons-box{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .icon{
@@ -261,4 +262,49 @@ button{
     border: none;
     cursor: pointer;
     font-size: 1em;
+}
+
+@media (max-width:397px) {
+    .main-content-conatiner ,.main-content{
+        position: absolute;
+        width: 100vw;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .hidden-share-box{
+        left: 0;
+        right: 0;
+        height: 22rem;
+    }
+    #circle1{
+        left: 0;
+        scale: 0.1;
+    }
+    #circle2{
+        right: 0;
+        scale: 0.8;
+    }
+}
+
+@media (max-width:532px) {
+    .main-content-conatiner{
+        position: absolute;
+        
+    }.icon{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .hidden-share-box{
+        left: 0;
+        right: 0;
+    }
+    #circle1{
+        left: 20px;
+    }
+    #circle2{
+        right: 20px;
+    }
 }
