@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal || Chayan Mallick</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+
+        <div class="main-content-conatiner">
+
+            <div class="main-content">
+
+                <div class="image-container">
+                    <img src="./userimg.jpeg" loading="lazy" height="150px" width="150px">
+                </div>
+    
+                <div class="name-container">
+                    Chayan Mallick
+                </div>
+    
+                <div class="designation">
+                    STUDENT , NIT DURGAPUR
+                </div>
+    
+                <div class="buttons">
+    
+                    <button class="share-profile" onclick="show()">
+                        <i class="fa-solid fa-share"></i>
+                        <span class="share-profile-text"> Share This Profile</span>
+                    </button>
+    
+                    <button class="follow-me">
+                        Follow Me
+                    </button>
+    
+                </div>
+    
+    
+            </div>
+    
+            <div class="hidden-share-box">
+    
+                <div class="heading">
+                    <div class="text">
+                        <div class="heading-title">Share My Profile</div>
+                        <button class="cross-button" onclick="closing()"> <i class="fa-solid fa-xmark"></i> </button>
+                    </div>
+                    <div class="line"></div>
+                </div>
+    
+                
+    
+                <div class="small-text">Share This Via</div>
+    
+                <div class="icons-box">
+                    <a href="#" class="facebook icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="twitter icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="instagram icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="whatsapp icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    
+                    <a href="#" class="telegram icon">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                </div>
+    
+            </div>
+
+        </div>
+
+        <div class="overlay-screen"></div>
+    </div>
+
+    
+    
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/cda96f45d3.js" crossorigin="anonymous"></script>
+</body>
+</html>
