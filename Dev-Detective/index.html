@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective || Github User </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+    
+        <div class="container">
+            <div class="heading-container">
+
+                <h1>DevDetective</h1>
+
+                <button data-changeThemeBtn class="themebtn" >
+                    
+                    <p data-DarkTheme>Dark <i class="fa-solid fa-moon"></i></p>
+
+                    <p data-LightTheme>Light <i class="fa-solid fa-sun"></i></p>
+
+                </button>
+
+            </div>
+
+            <form class="form-container">
+
+                <div class="form-div">
+
+                    <span><i class="fa-solid fa-magnifying-glass" style="color: #74C0FC;"></i></span>
+
+                    <input type="text" placeholder="Enter a Github UserName..." class="formInput" type="submit" />
+
+                    <span data-clearInput><i class="fa-solid fa-xmark"></i></span>
+
+                    <div data-errorMsg>no Search Results</div>
+
+                </div>
+
+
+                <button data-formBtn>
+                    Search
+                </button>
+
+            </form>
+
+            <div class="result-container">
+
+                <div class="userimageContainer">
+
+                    <img loading="lazy" data-userImage />
+
+                </div>
+
+                <div class="user-info-container">
+
+                    <div class="name-holder">
+
+                        <p data-userName></p>
+
+                        <p>Joined <span data-userJoiningDate></span></p>
+
+                    </div>
+
+                    <p class="profileLink"> <a href="" data-userProfileLink target="_blank"></a></p>
+
+                    <div class="bio" data-userBio></div>
+
+                    <div class="repos-info">
+
+                        <div class="count-container">
+
+                            <p>Repos</p>
+
+                            <p data-reposCount></p>
+
+                        </div>
+
+                        <div class="count-container">
+
+                            <p>Followers</p>
+
+                            <p data-followersCount></p>
+
+                        </div>
+
+                        <div class="count-container">
+
+                            <p>Following</p>
+
+                            <p data-FollowingCount></p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="personal-info">
+
+                        <div class="personal-info-container">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span data-userLocation></span>
+
+                        </div>
+
+                        <div class="personal-info-container">
+
+                            <i class="fa-solid fa-link"></i>
+
+                            <span> <a href="" data-userWebsiteLink target="_blank"></a> </span>
+
+                        </div>
+
+                        <div class="personal-info-container">
+
+                            <i class="fa-brands fa-twitter"></i>
+
+                            <span> <a href="" data-userTwitterLink target="_blank"></a> </span>
+
+                        </div>
+
+                        <div class="personal-info-container">
+
+                            <i class="fa-solid fa-building-user"></i>
+
+                            <span data-userCompanyName></span>
+
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/cda96f45d3.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+* , *::after , *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F8FE;
+}
+
+.wrapper.dark{
+    background-color: #141D2F;
+    color: white;
+}
+
+.container{
+    min-width: 600px;
+    width: 45%;
+}
+
+.heading-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 2.3rem;
+    color: rgba(34, 34, 75, 0.904);
+}
+
+h1.dark{
+    color: rgb(66, 231, 212);
+}
+
+.themebtn{
+    all: unset;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.themebtn p:last-of-type{  
+    color: white;
+    display: none;
+}
+
+.themebtn p:last-of-type.dark{
+    display: block;
+}
+
+.themebtn p:first-of-type.dark{
+    display: none;
+}
+
+.form-container{
+    width: 100%;
+    background-color: white;
+    height: 5rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 30px  rgba(182, 178, 178, 0.259)
+}
+
+.form-container.dark{
+    background-color: #1D2A47;
+    color: white;
+}
+
+.form-div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.form-div span:first-of-type{
+    font-size: 2em;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.form-div span:last-of-type{
+    font-size: 0rem;
+    margin-right: 30px;
+    height: 100%;
+}
+
+.form-div span:last-of-type.active{
+    font-size: 1.2rem;
+}
+
+.form-div input{
+    all: unset;
+    width: 60%;
+    height: 100%;
+    opacity: 0.7;
+    font-size: 1.4rem;
+}
+
+.form-div input::placeholder{
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+.form-div input.dark::placeholder{
+    color: white;
+    opacity: 0.3;
+}
+
+.form-div div:last-of-type{
+    color: red;
+    display: none;
+    text-transform: uppercase;
+}
+
+.form-div div:last-of-type.active{
+    display: block;
+}
+
+.form-container button{
+    all: unset;
+    background-color: rgb(85, 192, 225);
+    padding: 20px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3em;
+}
+
+.result-container{
+    display: flex;
+    padding: 30px 10px;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px  rgba(182, 178, 178, 0.259);
+}
+
+.result-container.dark{
+    background-color: #1D2A47;
+    color: white;
+}
+
+.userimageContainer img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.user-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    width: calc(100% - 150px);
+    padding: 0 20px;
+}
+
+.name-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.name-holder p:first-of-type{
+    font-size:35px;
+}
+
+.name-holder p:last-of-type{
+    font-size: 20px;
+    opacity: 0.5;
+    font-weight: 300;
+}
+
+.bio{
+    font-size: 1.4em;
+    opacity: 1;
+    font-weight: 500;
+    color: #51565ea4;
+}  
+
+.bio.dark{
+    color: white;
+}
+
+.repos-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F8FE;
+    padding: 0 40px;
+    border-radius: 10px;
+}
+
+.repos-info.dark{
+    background-color: #141D2F;
+}
+
+
+
+.count-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+}
+
+.count-container p:first-of-type{
+    font-size: 1em;
+
+}
+
+.count-container p:last-of-type{
+    font-size: 1.5em;
+
+}
+
+.personal-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    color: #4B6A9B;
+}
+
+.personal-info.dark{
+    color: white;
+}
+
+.personal-info a{
+    all: unset;
+    cursor: pointer;
+}
+
+.profileLink a{
+    color: rgb(84, 119, 215);
+}
+
+[data-clearInput]{
+    cursor: pointer;
+}
+
+@media (max-width:616px) {
+    .result-container{
+        flex-direction: column;
+    }
+
+    .name-holder{
+        justify-content: center;
+    }
+
+    .container{
+        min-width: 0px;
+        width: 100%;
+    }
+
+    .repos-info{
+        flex-direction: column;
+    }
+
+    .personal-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+        padding-top: calc(400px - 25vh);
+    }
+
+    .bio{
+        text-align: center;
+    }
+
+    .profileLink{
+        text-align: center;
+    }
+}
